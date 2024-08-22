@@ -1,7 +1,7 @@
 import random
 import operator
 from brain_games.games.even import welcome_user
-from brain_games.games.const import PLUS_NUM, MINUS_NUM, MIN_NUMBER, MAX_NUMBER, WRONG_ANSWER
+from brain_games.games.const import PLUS_NUM, MINUS_NUM, MIN_NUMBER, MAX_NUMBER, WRONG_ANSWER, CALC
 
 
 def random_sign():
@@ -24,7 +24,7 @@ def get_question():
 
 def main():
     name = welcome_user()
-    print('What is the result of the expression?')
+    print(CALC)
     correct_answers = 0
     while correct_answers < 3:
         num1, num2, operation = get_question()

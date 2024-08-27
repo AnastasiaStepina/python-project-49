@@ -1,7 +1,10 @@
 import random
 import operator
 from brain_games.games.even import welcome_user
-from brain_games.games.const import PLUS_NUM, MINUS_NUM, MIN_NUMBER, MAX_NUMBER, WRONG_ANSWER, CALC
+from brain_games.games.const import (
+    PLUS_NUM, MINUS_NUM, MIN_NUMBER,
+    MAX_NUMBER, WRONG_ANSWER, CALC
+)
 
 
 def random_sign():

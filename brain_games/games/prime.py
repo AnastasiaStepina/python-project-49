@@ -25,7 +25,8 @@ def main():
     while correct_answers < 3:
         num = get_question()
         answer = input('Your answer: ')
-        if answer == 'yes' and is_prime(num) or answer == 'no' and not is_prime(num):
+        if (answer == 'yes' and is_prime(num)
+                or answer == 'no' and not is_prime(num)):
             correct_answers += 1
             print("Correct!")
         else:

@@ -1,6 +1,6 @@
 import random
 from brain_games.games.even import welcome_user
-from brain_games.games.const import MIN_NUMBER, MAX_PROGR, WRONG_ANSWER, PROGRESSION
+from brain_games.games.const import MIN_NUMBER, MAX_PROGR, WRONG_ANSWER, PROGR
 
 
 def get_question():
@@ -18,7 +18,7 @@ def get_question():
 
 def main():
     name = welcome_user()
-    print(PROGRESSION)
+    print(PROGR)
     correct_answers = 0
     while correct_answers < 3:
         correct_answer = get_question()

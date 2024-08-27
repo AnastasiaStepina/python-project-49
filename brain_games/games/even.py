@@ -1,6 +1,9 @@
 import random
 import prompt
-from brain_games.games.const import MIN_NUMBER, MAX_NUMBER, WRONG_ANSWER, EVEN, WELCOME
+from brain_games.games.const import (
+    MIN_NUMBER, MAX_NUMBER,
+    WRONG_ANSWER, EVEN, WELCOME
+)
 
 
 def welcome_user():
@@ -25,7 +28,8 @@ def main():
     while correct_answers < 3:
         random_number = random.randint(MIN_NUMBER, MAX_NUMBER)
         answer = get_question(random_number)
-        if answer == 'yes' and is_even(random_number) or answer == 'no' and not is_even(random_number):
+        if (answer == 'yes' and is_even(random_number)
+                or answer == 'no' and not is_even(random_number)):
             correct_answers += 1
             print("Correct!")
         else:

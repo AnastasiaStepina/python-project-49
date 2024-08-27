@@ -30,7 +30,9 @@ def main():
             correct_answers = 0
             print(f"{answer} i{WRONG_ANSWER} {correct_answer}.")
             print(f"Let's try again, {name}!")
-    print(f"Congratulations, {name}!")
+            break
+    else:
+        print(f"Congratulations, {name}!")
 
 
 if __name__ == '__main__':

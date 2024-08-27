@@ -37,8 +37,9 @@ def main():
             correct_answer = 'yes' if is_even(random_number) else 'no'
             print(f"{answer} {WRONG_ANSWER} {correct_answer}.")
             print(f"Let's try again, {name}!")
-
-    print(f"Congratulations, {name}!")
+            break
+    else:
+        print(f"Congratulations, {name}!")
 
 
 if __name__ == '__main__':

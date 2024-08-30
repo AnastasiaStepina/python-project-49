@@ -11,7 +11,7 @@ def get_question():
     index = random.randint(0, 9)
     correct_answer = str(numbers[index])
     numbers[index] = ".."
-    question = ' '.join(map(str, numbers))
+    question = f"Question: {' '.join(map(str, numbers))}"
     return question, correct_answer
 
 

@@ -2,6 +2,14 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "A short math games"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9"
+]
 authors = ["Stepina <enot5662@gmail.com>"]
 repository = "https://github.com/AnastasiaStepina/python-project-49.git"
 readme = "README.md"
